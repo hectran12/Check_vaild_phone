@@ -128,7 +128,7 @@ function checkvaildphone($phone)
     curl_setopt(
         $ch,
         CURLOPT_URL,
-        "https://tronghoa.dev/api/vaild_phone.php?phone=840312345678"
+        "https://tronghoa.dev/api/vaild_phone.php?phone=" . $phone
     );
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
@@ -156,3 +156,4 @@ function checkvaildphone($phone)
     curl_close($ch);
     return $response;
 }
+

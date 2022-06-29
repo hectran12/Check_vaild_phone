@@ -1,1 +1,2 @@
 
+Kiểm tra có thời hạn . gửi request nhanh quá nó chặn.
